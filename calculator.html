@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    
+    
+</head>
+<body>
+    <h1><b>Calculator</b></h1>
+    <p><b>Enter first num:</b></p>
+    <input type="number" id="firstNumInput">
+    <p><b>Enter second num:</b></p>
+    <input type="number" id="secondNumInput">
+    <p><b>Enter operator:</b></p>
+    <input type="character" id="op">
+    <button onclick="calculator()">calculate:</button>
+    <script>
+        
+        function calculator()
+        {
+            var num1=parseInt(document.getElementById('firstNumInput').value);
+        var num2=parseInt(document.getElementById('secondNumInput').value);
+        var op=document.getElementById('op').value;
+        var r;
+        
+             if(op=='+')
+             {
+                r=num1+num2
+                alert("Result: " + r)
+             }
+             else if(op=='-')
+             {
+                r=Math.abs(num1-num2)
+                alert("Result: " + r)
+             }
+             else if(op=='*')
+             {
+                r=num1*num2
+                alert("Result: " + r)
+             }
+             else
+             {
+                alert("Invalid operator!")
+             }
+           
+        }
+    </script>
+    
+</body>
+</html>
