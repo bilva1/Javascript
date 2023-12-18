@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1><b>Kilometers to Miles converter</b></h1>
+    <p><b>Enter kilometers:</b></p>
+    <input type="number" id="kilo">
+    <button onclick="conversion()">Convert</button>
+    <script>
+        function conversion()
+        {
+           var kilo=parseInt(document.getElementById('kilo').value)
+           if(!isNaN(kilo))
+           {
+           var result=kilo*0.62137119+"miles"
+           alert("Result:"+result)
+           }
+           else
+           {
+            alert("Invalid input!")
+           }
+
+
+        }
+    </script>
+    
+</body>
+</html>
